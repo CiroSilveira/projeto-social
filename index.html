@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Redes Sociais</title>
+    <link rel="shortcut icon" href="pacote-d013/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;    
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+            background-position-y: center;
+            overflow: hidden;
+        }
+
+        main {
+            position: relative;
+            height: 100vh;
+        }
+        
+        section#telefone {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 627px;
+            width: 311px;
+            background: url(../imagens/frame-iphone.png) no-repeat;
+        }
+        
+        section.tela, iframe {
+            position: absolute;
+            top: 50.4%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 470px;
+            width: 267px;
+        }
+
+        section#redes {
+            height: 444px;
+            width: 100vw;
+            text-align: right;
+        }
+
+        img {
+            display: block;
+        }
+
+        img.icon {
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            margin: 10px 10px 20px 1540px;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="telefone">
+            <img src="pacote-d013/imagens/frame-iphone.png" alt="iPhone">
+        </section>
+        <iframe src="homescreen.html" frameborder="0" name="tela">
+            <section class="tela">
+            
+            </section>
+        </iframe>
+        <section id="redes">
+            <a href="homescreen.html" target="tela"> <img src="pacote-d013/imagens/logo-home.jpg" alt="logo-home" class="icon"></a>
+            <a href="youtube.html" target="tela"> <img src="pacote-d013/imagens/logo-youtube.jpg" alt="logo-youtube" class="icon"></a>
+            <a href="github.html" target="tela"> <img src="pacote-d013/imagens/logo-github.jpg" alt="logo-github" class="icon"></a>
+            <a href="instagram.html" target="tela"> <img src="pacote-d013/imagens/logo-instagram.jpg" alt="logo-instagram" class="icon"></a>
+            <a href="twitter.html" target="tela"> <img src="pacote-d013/imagens/logo-twitter.jpg" alt="logo-twitter" class="icon"></a>
+            <a href="facebook.html" target="tela"> <img src="pacote-d013/imagens/logo-facebook.jpg" alt="logo-facebook" class="icon"></a>
+        </section>
+    </main>
+</body>
+</html>
